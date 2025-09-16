@@ -31,7 +31,7 @@ def send_message():
     chat_window.yview(tk.END)
 
 root = tk.Tk()
-root.title("Gemini Chatbot")
+root.title("Chatbot")
 root.geometry("500x600")
 
 chat_window = scrolledtext.ScrolledText(root, wrap=tk.WORD, state=tk.DISABLED)
@@ -52,4 +52,5 @@ send_btn = tk.Button(frame, text="Send", command=send_message)
 send_btn.pack(side=tk.RIGHT)
 
 root.mainloop()
+
 
